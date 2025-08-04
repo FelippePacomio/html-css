@@ -1,0 +1,199 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@font-face {
+    font-family: 'Idroid';
+    src: url('./fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Anotações de melhorias: 
+
+Eu poderia ter usado o * {} para tirar todas as margins e padding ao invés de tirar manualmente, um por um;
+Poderia ter usado o :root para criar variáveis globais e facilitar na hora de mudar uma variável;
+Poderia ter usado o min-width e o max-width para dimensionar o tamanho do <main> (evitando o uso repetitivo de margin);
+Poderia ter usado o width: 100% nas imagens, para que ela aumente ou diminua de acordo com o tamanho da tela;
+
+*/
+
+:root {
+    --cor0: #ebe5c5;
+    --cor1: #83e1ab;
+    --cor2: #3ddc84;
+    --cor3: #2fa866;
+    --cor4: #1a5c37;
+    --cor5: #063d1e;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #56da8f;
+    margin: 0px;
+}
+
+header {
+    margin: 0px;
+    padding: 1em;
+    background-image: linear-gradient(#56da8f, #134228);
+    color: white;
+    box-shadow: 4px 4px 9px 0px rgba(0, 0, 0, 0.39);
+}
+
+nav>a:hover {
+    background-color: #56da8f;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 3px 3px;
+}
+
+nav>a {
+    text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.39);
+    color: white;
+    margin-right: 1em;
+    text-decoration: none;
+    font-weight: bold;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+header>h1 {
+    text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.39);
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+header>p {
+    text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.39);
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    padding: 1em;
+}
+
+main {
+    text-align: justify;
+    margin: auto;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.411);
+    border-radius: 0px 0px 10px 10px;
+    min-width: 300px;
+    max-width: 1000px;
+}
+
+main>h1 {
+    font-family: 'Idroid', sans-serif;
+    color: #387152;
+    text-indent: 0.5em;
+    margin-top: 0px;
+    padding-top: 15px;
+    text-align: left;
+}
+
+main>h2 {
+    font-family: 'Idroid', sans-serif;
+    color: #387152;
+    text-indent: 1em;
+    background-image: linear-gradient(to right, #88ddad, #ffffff);
+    margin-left: 0.5em;
+}
+
+main>p {
+    text-indent: 1.5em;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+main>div {
+    background-color: #c4fcdc;
+    margin-left: 1em;
+    margin-right: 1em;
+    border-radius: 10px 10px;
+    box-shadow: 0px 0px 6px 3px rgba(0, 0, 0, 0.411);
+}
+
+div>p {
+    text-indent: 1.5em;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+div>h3 {
+    font-weight: bold;
+    color: white;
+    padding: 10px;
+    background-color: #43a56e;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.text-bold {
+    font-weight: bold;
+    color: #134228;
+}
+
+section {
+    text-align: center;
+}
+
+.video-frame {
+    padding-top: 1.5em;
+    padding-bottom: 56.5%;
+    background-color: #134228;
+    position: relative;
+}
+
+.video-frame>iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+#lista-dividida {
+    text-decoration: underline;
+    list-style: none;
+    content: "✔";
+    columns: 2;
+}
+
+#lista-dividida li::marker {
+    content: "✔ ";
+}
+
+#paragrafo-final {
+    padding: 1.5em;
+}
+
+footer {
+    font-style: italic;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    background-color: #134228;
+}
+
+footer>span {
+    font-weight: bold;
+}
+
+.links {
+    background-color: var(--cor1);
+    padding: 2px 6px;
+    font-weight: bold;
+    color: #134228;
+    text-decoration: none;
+}
+
+.links:hover {
+    text-decoration: underline;
+    color: var(--cor4);
+}
+
+.links::after {
+    content: '\00A0\1F517';
+}
+
+p {
+    line-height: 1.6em;
+}

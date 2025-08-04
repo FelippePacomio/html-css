@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+</head>
+<style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: lightblue;
+        margin: 0px;
+    }
+
+    header {
+        padding: 10px;
+        margin: 10px;
+        background-color: wheat;
+    }
+
+    nav {
+        background-color: darkgrey;
+        padding: 3px;
+        box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.37);
+    }
+
+    nav > a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        margin-right: 30px;
+    }
+
+    nav > a:hover {
+        text-decoration: underline;
+    }
+
+    main {
+        background-color: white;
+        padding: 10px;
+        margin: 10px;
+        border-radius: 0px 10px;
+        box-shadow: 4px 4px 9px 0px rgba(0, 0, 0, 0.39);
+    }
+
+    article {
+        background-color: aquamarine;
+    }
+
+    article > aside {
+        background-color: brown;
+        color: white;
+    }
+
+    footer {
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding: 5px;
+        margin: 0px;
+    }
+
+    footer > p {
+        margin: 0px;
+    }
+
+    #logo {
+        font-weight: bold;
+    }
+
+    #bola {
+        height: 100px;
+        width: 100px;
+        background-color: white;
+        margin: 10px;
+        border-radius: 180px;
+    }
+</style>
+
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="">Link</a>
+            <a href="">Link</a>
+            <a href="">Link</a>
+            <a href="">Link</a>
+            <a href="">Link</a>
+        </nav>
+    </header>
+    <main>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis quidem modi consequatur! Quam quis iure,
+            dicta exercitationem quos laudantium, dolore illo, praesentium illum fugit ad? Deleniti id explicabo
+            consectetur ut.</p>
+        <section id="noticias">
+            <article>
+                <h2>Notícia sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut totam deleniti voluptate placeat ex
+                    aliquid illo, porro voluptatem minima quam incidunt magnam eius, libero harum ducimus distinctio
+                    recusandae consequuntur ea.</p>
+                <aside>
+                    <p>Artigo escrito por Joséf.</p>
+                </aside>
+            </article>
+        </section>
+        <section id="assuntos"></section>
+
+    </main>
+    <footer>
+        <p>Desenvolvido pelo <span id="logo">DescompliCAC</span></p>
+    </footer>
+    <div id="bola"></div>
+</body>
+
+</html>
