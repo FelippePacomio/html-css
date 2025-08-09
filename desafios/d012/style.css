@@ -1,0 +1,83 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+* {
+    margin: 0px;
+}
+
+header {
+    padding: 3em;
+    background-color: black;
+    box-shadow: 4px 4px 9px 0px rgba(0, 0, 0, 0.39);
+}
+
+header>h1 {
+    color: white;
+    text-align: center;
+    margin-bottom: 5px;
+    font-family: 'Passion One', sans-serif;
+    font-size: 8vw;
+}
+
+header>p {
+    color: white;
+    text-align: center;
+}
+
+header>p>strong>a {
+    color: white;
+    text-decoration: none;
+}
+
+header>p>strong>a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    margin-left: 2em;
+    font-family: 'Sriracha', sans-serif;
+}
+
+section>p {
+    font-size: 3.5vw;
+}
+
+.cordel-bg {
+    background-image: url('imagens/background001.jpg');
+    margin: 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: right center;
+    box-shadow: 4px 4px 9px 0px rgba(0, 0, 0, 0.39);
+}
+
+.cordel-bg>div {
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.445);
+    margin-left: 1em;
+    padding: 1em;
+}
+
+.cordel-bg>div>p {
+    color: white;
+    font-size: 3.5vw;
+    text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.39);
+}
+
+#livro {
+    background-image: url('imagens/background002.jpg');
+}
+
+footer {
+    font-family: 'Passion One', sans-serif;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    background-color: #000000;
+}
