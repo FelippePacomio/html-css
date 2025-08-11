@@ -82,18 +82,18 @@ header {
     background-attachment: fixed;
     background-position: center;
     box-shadow: inset 4px 4px 9px 0px rgba(0, 0, 0, 0.39);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 2rem;
 }
 
 .atirador>div {
-    margin: 0;
     background-color: #005c53;
     border-radius: 1em;
     padding: 15px;
     width: 600px;
     height: 400px;
-    position: absolute;
-    top: 35%;
-    left: 50%;
 }
 
 .atirador>div>p {
@@ -119,12 +119,12 @@ header {
 .botao-container>button {
     background-color: var(--verde-escuro);
     border: 2px solid #dbf227;
-    margin-top: 10vh;
+    margin-top: 5vh;
     padding: 1em;
     cursor: pointer;
     color: white;
     font-weight: bold;
-    font-size: 1.3vw;
+    font-size: 1.3em;
     border-radius: 1em;
 }
 
@@ -184,10 +184,6 @@ footer {
     background-color: #005c53;
 }
 
-@media (min-width: 834px) {
-
-}
-
 @media (max-width: 834px) {
     header {
         font-size: 0.5em;
@@ -222,22 +218,18 @@ footer {
         padding: 0;
     }
 
-    .atirador {
-        height: 90vh;
-    }
-
     .atirador>div {
         width: 45vw;
-        height: 70vh;
-        padding-top: 5vh;
-        padding-bottom: 5vh;
+        height: 50vw;
+        padding-top: 3vw;
+        padding-bottom: 0.5vw;
     }
 
     .atirador>div>p {
         color: white;
         margin: 0;
         text-align: justify;
-        font-size: 1.9vw;
+        font-size: 1.7vw;
     }
 
     .atirador>div>h1 {
@@ -255,7 +247,7 @@ footer {
     }
 
     .botao-container>button {
-        font-size: 0.9em;
+        font-size: 2vw;
         margin-top: 0;
         padding: 10px;
     }
@@ -281,9 +273,7 @@ footer {
 
 /* Para dispositivos com largura de tela menor que 480px (smartphones) */
 
-@media (max-width: 727px) {}
-
-@media (max-width: 480px) {
+@media (max-width: 600px) {
     header {
         font-size: 0.5em;
     }
@@ -296,19 +286,94 @@ footer {
         font-size: 0.9rem;
     }
 
+    .atirador {
+        background-image: url('imagens/atirador2.jpg');
+        margin: 0px;
+        height: auto;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+        box-shadow: inset 4px 4px 9px 0px rgba(0, 0, 0, 0.39);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .atirador>div {
+        background-color: #005c53;
+        border-radius: 1em;
+        padding: 15px;
+        width: 600px;
+        height: 400px;
+    }
+
+    .atirador>div>p {
+        color: white;
+        margin: 0;
+        padding: 10px;
+        text-align: justify;
+        font-size: 1em;
+    }
+
+    .atirador>div>h1 {
+        text-align: center;
+        color: white;
+        font-weight: bold;
+    }
+
+    .botao-container {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 2vh;
+    }
+
+    .botao-container>button {
+        background-color: var(--verde-escuro);
+        border: 2px solid #dbf227;
+        margin-top: 2vw;
+        cursor: pointer;
+        color: white;
+        font-weight: bold;
+        font-size: 1em;
+        border-radius: 1em;
+    }
+
     #cliente {
         font-size: 1rem;
         padding: 0.5rem;
         margin-top: 1em;
     }
 
-    .botao-container>button {
-        font-size: 4vw;
-        padding: 1em;
+    .documentacao {
+        display: flex;
+        width: 100%;
+        height: 400px;
+    }
+
+    .documentacao-container {
+        width: 0%;
+        background-image: url('');
+    }
+
+    .documentacao>div>h2 {
+        text-align: center;
+    }
+
+    .documentacao>div>p {
+        padding-left: 1em;
+        padding-right: 1em;
+        text-align: center;
     }
 
     .documentacao>div {
-        padding: 10px;
+        background-color: #EAEAEA;
+        color: black;
+        width: 100%;
+        padding: 20px;
+        display: inline-block;
     }
 
     footer {
