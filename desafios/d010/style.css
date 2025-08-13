@@ -197,3 +197,9 @@ footer>span {
 p {
     line-height: 1.6em;
 }
+
+p#tag{
+    text-align: center;
+    font-size: 1px;
+    display: none;
+}
