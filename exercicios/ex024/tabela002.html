@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: auto;
+        }
+
+        body {
+            margin: 4%;
+        }
+
+        table {
+            width: 500px;
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        caption {
+            font-size: 1.3em;
+            font-weight: bold;
+            padding: 9px;
+        }
+
+        thead>tr>th {
+            background-color: gray;
+            color: white;
+        }
+
+        tr,
+        th,
+        td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        tbody>tr>th.cabecalho {
+            background-color: white;
+        }
+
+        tbody>tr:nth-child(even) {
+            background-color: lightgray;
+        }
+
+        col.cnome {
+            background-color: white;
+        }
+
+    </style>
+    <title>Cadastro</title>
+</head>
+
+<body>
+    <table>
+        <colgroup>
+            <col class="cnome">
+            <col class="csexo">
+            <col class="cidade">
+            <col class="cprof">
+        </colgroup>
+        <caption>Cadastro</caption>
+        <thead>
+            <tr>
+                <th scope="col" class="cabecalho">Nome</th>
+                <th scope="col" class="cabecalho">Sexo</th>
+                <th scope="col" class="cabecalho">Idade</th>
+                <th scope="col" class="cabecalho">Profissão</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Ana Maria Santos</td>
+                <td>F</td>
+                <td>25</td>
+                <td>Jornalista</td>
+            </tr>
+            <tr>
+                <td>João Carlos Pereira</td>
+                <td>M</td>
+                <td>32</td>
+                <td>Engenheiro Civil</td>
+            </tr>
+            <tr>
+                <td>Mariana Oliveira Costa</td>
+                <td>F</td>
+                <td>28</td>
+                <td>Médica</td>
+            </tr>
+            <tr>
+                <td>Rafael Lima Torres</td>
+                <td>M</td>
+                <td>41</td>
+                <td>Professor</td>
+            </tr>
+            <tr>
+                <td>Beatriz Almeida Souza</td>
+                <td>F</td>
+                <td>22</td>
+                <td>Designer Gráfica</td>
+            </tr>
+            <tr>
+                <td>Carlos Eduardo Mendes</td>
+                <td>M</td>
+                <td>36</td>
+                <td>Advogado</td>
+            </tr>
+            <tr>
+                <td>Sofia Martins Rocha</td>
+                <td>F</td>
+                <td>30</td>
+                <td>Analista de Sistemas</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
