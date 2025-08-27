@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com Iframe</title>
+    <style>
+        iframe{
+            width: 400px;
+            height: 400px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando o uso de um iframe</h1>
+    <!-- Tamanho padrão 300x150px-->
+<p>
+    Acessando a wiki original do Stardew Valley
+        <iframe src="https://stardewvalleywiki.com/Stardew_Valley_Wiki" frameborder="0" scrolling='no'>
+              Aqui nós colocamos o que aparecerá caso o iframe não seja compatível com o dispositivo.
+              <a href="https://stardewvalleywiki.com/Stardew_Valley_Wiki" target="_blank" alt="Site do Stardew Valley Expanded Wiki"></a>
+        </iframe>
+</p>
+<p>
+    Acessando a wiki do Stardew Valley Expanded para aprender mais
+        <iframe src="https://stardew-valley-expanded.fandom.com/wiki/Stardew_Valley_Expanded_Wiki" frameborder="600">
+              Aqui nós colocamos o que aparecerá caso o iframe não seja compatível com o dispositivo.
+              <a href="https://stardew-valley-expanded.fandom.com/wiki/Stardew_Valley_Expanded_Wiki" target="_blank" alt="Site do Stardew Valley Expanded Wiki"></a>
+        </iframe>
+</p>
+</body>
+</html>

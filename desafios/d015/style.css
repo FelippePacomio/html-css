@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+* {}
+
+body {
+    margin: 0px;
+    background-color: #EDE7E3;
+}
+
+main {
+    margin: auto;
+    min-width: 300px;
+    max-width: 1920px;
+}
+
+section.contato {
+    margin: 0px;
+    height: 600px;
+    box-shadow: inset 4px 4px 9px 0px rgba(0, 0, 0, 0.39);
+    align-items: center;
+    padding-right: 20px;
+    padding-left: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+section.contato>div {
+    background-color: #385e5a;
+    border-radius: 1em;
+    text-align: center;
+    margin-top: 10px;
+    padding: 25px;
+    color: white;
+}
+
+section.info-contato {
+    background-color: white;
+}
+
+section.info-contato>h2 {
+    margin: 0;
+    font-size: large;
+}
+
+
+
+
+
+footer {
+    color: white;
+    padding: 10px;
+    font-size: 0.8em;
+    text-align: center;
+    background-color: #273433;
+}
